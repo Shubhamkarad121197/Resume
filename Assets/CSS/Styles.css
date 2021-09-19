@@ -9,7 +9,7 @@
 
 /*-----------Colors------------ */
 :root{
-    --first-color: #e0b53c;
+    --first-color: #ff6347;
     --second-color: #0E2431;
 }
 
@@ -252,7 +252,7 @@ img{
 }
 .nav__link{
     position: relative;
-    color: #fff;
+    
 }
 .nav__link:hover{
     position: relative;
@@ -500,18 +500,19 @@ body{
 
   @keyframes animate{
       0%{
-         content:" Frontend Developer";
+         content:"👨‍💻 Frontend Developer";
       }
-      20%{
-         content: "UI/UX Designer";
+      25%{
+         content: "🧑‍🎨 UI Designer";
       }
-      60%{
-         content:" Photographer";
+      50%{
+         content:"✍  Writter";
       }
-      80%{
-         content: "Traveller";
+      75%{
+         content: "⛷ Traveller";
       }
       100%{
-          content: ":)";
+          content:"👋";
       }
+    
   }
