@@ -10,7 +10,7 @@
 /*-----------Colors------------ */
 :root{
     --first-color: #ff6347;
-    --second-color: #0E2431;
+    --second-color: rgb(9, 9, 59);
 }
 
 /*-----------Fonts------------ */
@@ -161,11 +161,12 @@ img{
     margin: auto 0;
 }
 .home__img img{
+    z-index: -1;
     width: 300px;
     border-radius: 50%;
     height: auto;
     border: 6px solid #d4d1d1;
-    box-shadow: 0 10px 36px rgba(0,0,0,.25);
+    box-shadow: 0 10px 36px rgba(0,0,0,.40);
 }
 /*-----------Button------------ */
 .button{
@@ -209,11 +210,11 @@ img{
         position: fixed;
         top: var(--header-height);
         right: -100%;
-        width: 80%;
-        height: 100%;
+        width: 30%;
+        height: 40%;
         padding: 2rem;
         background-color: var(--second-color);
-        transition: .5s;
+        transition: 2s;
     }
     .home__social-icon{
         margin: auto;
@@ -483,7 +484,7 @@ body{
 
 /*-----------Dark Mode------------ */
 .darkMode{
-    background-color: #111;
+    background-color: black;
     color: #fff;
 }
 .modebtn{
@@ -493,6 +494,7 @@ body{
 
   .fadeIn::before{
     content: "";
+    transition: 1s;
     animation: animate  6s linear  infinite alternate;
     
   }
@@ -501,15 +503,16 @@ body{
   @keyframes animate{
       0%{
          content:"👨‍💻 Frontend Developer";
+         
       }
       25%{
-         content: "🧑‍🎨 UI Designer";
+         content: "🧑‍🎨 UI Developer";
       }
       50%{
-         content:"✍  Writter";
+         content:"✍ Writer";
       }
       75%{
-         content: "⛷ Traveller";
+         content: " Traveller";
       }
       100%{
           content:"👋";
